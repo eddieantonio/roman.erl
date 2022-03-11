@@ -53,24 +53,29 @@ that can be used to parse units (Ⅰ) can be reused to parse tens (Ⅹ) and
 hundreds (Ⅽ), the finite state machine can be parameterized for t unit
 (Ⅰ), half (Ⅴ), and next (Ⅹ) letter.
 
-<!-- see: https://g.gravizo.com/#howto -->
-![Generic finite state acceptor for Roman numerals](https://g.gravizo.com/svg?
+![Generic finite state acceptor for Roman
+numerals](https://g.gravizo.com/source/fsm?https%3A%2F%2Fraw.githubusercontent.com%2Feddieantonio%2Froman.erl%2Fmain%2FREADME.md)
+
+<details>
+<summary></summary>
+fsm
  digraph G {
- rankdir = "LR";
- node [shape = doublecircle];
- start -> i [label="i"];
- start -> v [label="v"];
- i -> iv [label = "v"];
- i -> ii [label = "i"];
- i -> ix [label = "x"];
- ii -> iii  [label = "i"];
- v -> vi  [label = "i"];
- vi -> ii  [label = "i"];
- start [shape=point];
- ii [label = "ii or vii"];
- iii [label = "iii or viii"];
- }
-)
+    rankdir = "LR";
+    node [shape = doublecircle];
+    start -> i [label="i"];
+    start -> v [label="v"];
+    i -> iv [label = "v"];
+    i -> ii [label = "i"];
+    i -> ix [label = "x"];
+    ii -> iii  [label = "i"];
+    v -> vi  [label = "i"];
+    vi -> ii  [label = "i"];
+    start [shape=point];
+    ii [label = "ii or vii"];
+    iii [label = "iii or viii"];
+  }
+fsm
+</details>
 
 ## Internal Representation
 
