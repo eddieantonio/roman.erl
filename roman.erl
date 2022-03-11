@@ -342,7 +342,7 @@ parse_generalis(Nomen, {I, V, X}, AtomList) ->
 %%
 %% Note: accepted atoms are returned in REVERESED order!
 %%
-%% See roman.pdf for a diagram of this state machine.
+%% See the README for a diagram of this state machine.
 parse_generalis_initium({I, V, X}, [I|Etc], Acc) -> i({I, V, X}, Etc, [I|Acc]);
 parse_generalis_initium({I, V, X}, [V|Etc], Acc) -> v({I, V, X}, Etc, [V|Acc]);
 parse_generalis_initium({_, _, _}, Etc, []) -> {[], Etc}.

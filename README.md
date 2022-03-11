@@ -19,9 +19,8 @@ Right now, you have to compile it yourself, but you can pop into the
 `erl` console and do the following:
 
 ```erl
-> 1> c(roman).
+1> c(roman).
 {ok,roman}
-> 2
 2> roman:add(ii, ii).
 iv
 3> roman:add(cdxx, lxix).
@@ -49,9 +48,9 @@ incrementing or decrementing numbers one-by-one.
 # Parser
 
 The parser is a "generic" finite state machine. Since the same logic
-that can be used to parse units (Ⅰ) can be reused to parse tens (Ⅹ) and
-hundreds (Ⅽ), the finite state machine can be parameterized for t unit
-(Ⅰ), half (Ⅴ), and next (Ⅹ) letter.
+that is used to parse units (Ⅰ) can be reused to parse tens (Ⅹ) and
+hundreds (Ⅽ), the finite state machine can be parameterized for its symbols for unit
+(Ⅰ), half (Ⅴ), and next (Ⅹ).
 
 ![Generic finite state acceptor for Roman
 numerals](https://g.gravizo.com/source/fsm?https%3A%2F%2Fraw.githubusercontent.com%2Feddieantonio%2Froman.erl%2Fmain%2FREADME.md)
