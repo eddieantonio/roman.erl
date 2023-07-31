@@ -97,6 +97,15 @@ Examples:
  - ⅮⅬⅤ = `[{unus, v}, {decem, l}, {centum, d}]`
  - ⅯⅯⅩⅡ = `[{unus, ii}, {decem, xx}, {mille, ii}]`
 
+# Prior art
+
+It turns out that Claude Shannon had this idea LVIX years earlier than
+me.
+
+> Claude E. Shannon, "THROBAC I, Bell Laboratories Memorandum, April 9,
+> 1953.," in Claude E. Shannon: Collected Papers, IEEE, 1993,
+> pp.695-698, doi: 10.1109/9780470544242.b ch47.
+
 # License
 
 MIT License.
